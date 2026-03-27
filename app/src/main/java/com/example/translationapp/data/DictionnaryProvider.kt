@@ -15,42 +15,42 @@ package com.example.translationapp.data
  */
 class DictionnaryProvider {
 
-    fun getFoodWords(): List<DictionnaryTranslation> {
+    fun getFoodWords(): List<DictionaryTranslation> {
         return listOf(
-            DictionnaryTranslation(1, "Apple", "Pomme", 1),
-            DictionnaryTranslation(2, "Bread", "Pain", 1),
-            DictionnaryTranslation(3, "Cheese", "Fromage", 1),
-            DictionnaryTranslation(4, "Water", "Eau", 1),
+            DictionaryTranslation(1, "Apple", "Pomme", 1),
+            DictionaryTranslation(2, "Bread", "Pain", 1),
+            DictionaryTranslation(3, "Cheese", "Fromage", 1),
+            DictionaryTranslation(4, "Water", "Eau", 1),
         )
     }
 
-    fun getMiscWords(): List<DictionnaryTranslation> {
+    fun getMiscWords(): List<DictionaryTranslation> {
         return listOf(
-            DictionnaryTranslation(5, "Red", "Rouge", 2),
-            DictionnaryTranslation(6, "Happy", "Heureux", 2),
-            DictionnaryTranslation(7, "Today", "Aujourd'hui", 2)
+            DictionaryTranslation(5, "Red", "Rouge", 2),
+            DictionaryTranslation(6, "Happy", "Heureux", 2),
+            DictionaryTranslation(7, "Today", "Aujourd'hui", 2)
         )
     }
 
-    fun getAnimalWords(): List<DictionnaryTranslation> {
+    fun getAnimalWords(): List<DictionaryTranslation> {
         return listOf(
-            DictionnaryTranslation(8, "Cat", "Chat", 3),
-            DictionnaryTranslation(9, "Dog", "Chien", 3),
-            DictionnaryTranslation(10, "Bird", "Oiseau", 3),
-            DictionnaryTranslation(11, "Horse", "Cheval", 3)
+            DictionaryTranslation(8, "Cat", "Chat", 3),
+            DictionaryTranslation(9, "Dog", "Chien", 3),
+            DictionaryTranslation(10, "Bird", "Oiseau", 3),
+            DictionaryTranslation(11, "Horse", "Cheval", 3)
         )
     }
 
-    fun getEverydayObjects(): List<DictionnaryTranslation> {
+    fun getEverydayObjects(): List<DictionaryTranslation> {
         return listOf(
-            DictionnaryTranslation(12, "Chair", "Chaise", 4),
-            DictionnaryTranslation(13, "Table", "Table", 4),
-            DictionnaryTranslation(14, "Key", "Clé", 4),
-            DictionnaryTranslation(15, "Phone", "Téléphone", 4)
+            DictionaryTranslation(12, "Chair", "Chaise", 4),
+            DictionaryTranslation(13, "Table", "Table", 4),
+            DictionaryTranslation(14, "Key", "Clé", 4),
+            DictionaryTranslation(15, "Phone", "Téléphone", 4)
         )
     }
 
-    fun getAllWords(): List<DictionnaryTranslation> {
+    fun getAllWords(): List<DictionaryTranslation> {
         return getFoodWords() + getMiscWords() + getAnimalWords() + getEverydayObjects()
     }
 

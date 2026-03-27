@@ -1,7 +1,7 @@
 package com.example.translationapp.controllers
 
 import com.example.translationapp.data.DictionnaryProvider
-import com.example.translationapp.data.DictionnaryTranslation
+import com.example.translationapp.data.DictionaryTranslation
 
 /**
  * @author{NOTO BAPTISTE}
@@ -13,22 +13,22 @@ import com.example.translationapp.data.DictionnaryTranslation
 class GenerateWordSetController(private val dataProvider: DictionnaryProvider = DictionnaryProvider()) {
 
     /**
-     * @return List<DictionnaryTranslation>
+     * @return List<DictionaryTranslation>
      *     Retourne une liste aléatoire de mots
      * @param size: Int qui défini la prise de 'n' éléments
      */
-    fun getRandomSet(size: Int): List<DictionnaryTranslation> {
+    fun getRandomSet(size: Int): List<DictionaryTranslation> {
         return dataProvider.getAllWords()
             .shuffled()
             .take(size)
     }
 
     /**
-     * @return List<DictionnaryTranslation>
+     * @return List<DictionaryTranslation>
      *     Retourne une liste aléatoire de mots filtrés par thèmes
      * @param size: Int qui défini la prise de 'n' éléments
      */
-    fun getRandomSetByTheme(themeId: Int, size: Int): List<DictionnaryTranslation> {
+    fun getRandomSetByTheme(themeId: Int, size: Int): List<DictionaryTranslation> {
         return dataProvider.getAllWords()
             .filter { mot -> mot.theme == themeId } // Filtre par l'ID du thème
             .shuffled()
